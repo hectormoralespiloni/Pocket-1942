@@ -28,15 +28,15 @@ Java 1942 (May 2005)
 5. CODE STURCTURE
 	* The images folder contains all the png with transparency used in the game.
 	* There are 6 classes:
-	* Sprite.java: 	this class manages the basic sprite stuff such as get and set
+	    * Sprite.java: 	this class manages the basic sprite stuff such as get and set
 			its position, collision detection and drawing the sprite.
-	* Player.java: 	this class inherits from sprite and it just adds the set/get
+	    * Player.java: 	this class inherits from sprite and it just adds the set/get
 			state functionality (playing, dying, exploding, or whatever)
-	* Bullet.java:	this class inherits from sprite and adds the owner functionality
+	    * Bullet.java:	this class inherits from sprite and adds the owner functionality
 			(to know to whom it belongs, a player or an enemy)
-	* Enemy.java:	this class inherits from sprite and adds a move method (which is
+	    * Enemy.java:	this class inherits from sprite and adds a move method (which is
 			basic AI to move the enemies in a randomly way)
-	* Explosion.java: just another sprite child to handle explosions.
-	* Midlet.java:	this is where the magic happens, it creates a midlet, starts
+	    * Explosion.java: just another sprite child to handle explosions.
+	    * Midlet.java:	this is where the magic happens, it creates a midlet, starts
 			and initializes the application. It has a threaded canvas (runnable)
 			which acts as the main game loop entry.
